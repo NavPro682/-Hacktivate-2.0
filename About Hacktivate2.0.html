@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hacktivate 2.0 - Tech & Creativity Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1c1c1c;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #00fff7;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c0b5;
+    }
+
+    header {
+      background: linear-gradient(to right, #00fff7, #008cff);
+      color: #0f0f0f;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate {
+      animation: slideUp 1.5s ease-in;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00fff7;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: "🌟 ";
+      margin-left: 1.5rem;
+    }
+
+    .highlight {
+      color: #00fff7;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,247,0.1);
+      transition: transform 0.3s;
+      animation: slideUp 1s ease-in;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #101010;
+      color: #aaa;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #00fff7;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #00c0b5;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#bots">Bots</a>
+    <a href="#events">Events</a>
+    <a href="#join">Join</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>💻 Hacktivate 2.0</h1>
+    <p>Tech, Creativity & Community Combined</p>
+  </header>
+
+  <section id="about" class="animate">
+    <h2>🌐 What is Hacktivate 2.0?</h2>
+    <p>Welcome to <span class="highlight">Hacktivate 2.0</span>, a vibrant global community where tech lovers, coders, gamers, and creative minds unite. Whether you're a beginner developer, Scratch creator, or just love bots and good vibes — this is your digital home.</p>
+  </section>
+
+  <section id="features" class="animate">
+    <h2>🧱 Key Features</h2>
+    <div class="card">
+      <ul>
+        <li><strong>#general</strong> – Casual chatting and fun convos</li>
+        <li><strong>#questions</strong> – Get help or help others</li>
+        <li><strong>#coding</strong> – HTML, CSS, Python, Scratch & more</li>
+        <li><strong>#customize-your-role-colour</strong> – Customize your identity</li>
+        <li><strong>#welcome & #say-hello</strong> – Meet & greet fellow members</li>
+        <li><strong>#announcements</strong> – Stay up-to-date</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bots" class="animate">
+    <h2>🤖 Strong Bot Support</h2>
+    <div class="card">
+      <ul>
+        <li><span class="highlight">Hecker</span> – Quick commands & info</li>
+        <li><span class="highlight">Color-chan</span> – Personalize your role</li>
+        <li><span class="highlight">Dank Memer</span> – Memes & games</li>
+        <li><span class="highlight">Carl-Bot</span> – Moderation & automation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="events" class="animate">
+    <h2>🏆 Events & Activities</h2>
+    <div class="card">
+      <p>We host:</p>
+      <ul>
+        <li>🎮 Gaming Events</li>
+        <li>💻 Mini coding challenges</li>
+        <li>🏅 Friendly competitions</li>
+        <li>🎉 Surprise games and celebrations</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="join" class="animate">
+    <h2>🌍 Why Join?</h2>
+    <div class="card">
+      <ul>
+        <li>✨ Global community of Scratch & code enthusiasts</li>
+        <li>🤖 Bot-powered fun and productivity</li>
+        <li>🎮 Regular events and game events</li>
+        <li>💬 Active and friendly discussions</li>
+        <li>💡 Learn, build, and share your ideas</li>
+      </ul>
+      <a href="https://discord.gg/TyRZWC5ezt" class="button" target="_blank">👉 Join Hacktivate 2.0 - Don't miss the fun!</a>
+    </div>
+  </section>
+
+  
+<section id="contact" class="animate">
+  <h2>📞 Contact Us</h2>
+  <div class="card">
+    <p>Got questions, ideas, or just want to connect? Reach out to us on Discord:</p>
+    <a href="https://discordapp.com/users/1182203704779218954" class="button" target="_blank">@proboiz192</a>
+    <a href="https://discordapp.com/users/1347474373086543923" class="button" target="_blank">@whatsmyname_akapro</a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Hacktivate 2.0 | Built with 💙 by the community</p>
+  </footer>
+
+</body>
+</html>
